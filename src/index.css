@@ -1,0 +1,31 @@
+#root{
+  /*Primary*/
+  --bright-blue:hsl(220, 98%, 61%);
+  --check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  /*Light theme*/
+  --ligththeme-very-light-gray: hsl(0, 0%, 98%);
+  --lighttheme-very-light-grayish-blue: hsl(236, 33%, 92%);
+  --lighttheme-light-grayish-blue: hsl(233, 11%, 84%);
+  --lighttheme-dark-grayish-blue: hsl(236, 9%, 61%);
+  --lighttheme-very-dark-grayish-blue: hsl(235, 19%, 35%);
+  /*Dark theme*/
+  --darktheme-very-dark-blue: hsl(235, 21%, 11%);
+  --darktheme-very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --darktheme-light-grayish-blue: hsl(234, 39%, 85%);
+  --darktheme-light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --darktheme-dark-grayish-blue: hsl(234, 11%, 52%);
+  --darktheme-very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --darktheme-very-dark-grayish-blue-hover: hsl(237, 14%, 26%);
+}
+
+body{
+  font-size:18px;
+  font-family: "Josefin Sans", sans-serif;
+  min-width:375px;
+}
+
+*{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
