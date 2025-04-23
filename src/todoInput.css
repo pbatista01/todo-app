@@ -31,7 +31,6 @@
     display:block;
     width:20px;
     height:20px;
-    border:1.5px solid var(--lighttheme-light-grayish-blue);
     border-radius:100%;
     text-align: center;
     line-height:21px;
@@ -40,7 +39,7 @@
     top:16px;
     left:24px;
     background-color:transparent;
-
+    border:1.5px solid var(--lighttheme-light-grayish-blue);
 }
 
 .todo-item:hover .check-icon{
@@ -68,8 +67,18 @@
     border-radius:5px;   
     font-size:0.8rem;
     padding-left:60px;
-    color:var(--lighttheme-very-dark-grayish-blue);
+    
     font-weight:700;
+}
+
+.todo-input.light{
+    color:var(--lighttheme-very-dark-grayish-blue);
+    background-color:white;
+}
+
+.todo-input.dark{
+    color: var(--darktheme-light-grayish-blue);
+    background-color: var(--darktheme-very-dark-desaturated-blue);
 }
 
 .todo-input:focus{
