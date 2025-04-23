@@ -6,10 +6,10 @@
     width:100.5%;
     background-color:white;
     position:relative;
-    top:-33px;
+    top:-31px;
     border-radius:5px;
     margin-left:30px;
-    box-shadow:1px 1px 5px var(--lighttheme-very-light-grayish-blue);
+    box-shadow:1px 1px 2px #eee, -1px -1px 2px #eee;
 }
 
 .filter-list{
@@ -18,13 +18,12 @@
     background-color:white;
     border-radius:5px;
     margin-left:30px;
-    box-shadow:1px 1px 5px var(--lighttheme-very-light-grayish-blue);
-    margin-top:-15px;
+    box-shadow:1px 1px 2px #eee, -1px -1px 2px #eee;
+    margin-top:-14px;
     display:flex;
     gap:23px;
     align-items: center;
     justify-content: center;
-
 }
 
 .filter-item{
@@ -80,6 +79,7 @@
 .todo-item:hover .delete-icon{
     display:block;
 }
+
 
 .delete-icon{
     display:none;
