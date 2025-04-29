@@ -42,7 +42,7 @@
     border:1.5px solid var(--lighttheme-light-grayish-blue);
 }
 
-.todo-item:hover .check-icon{
+.todo-item.completed .check-icon{
     background:var(--check-background);
     width:22px;
     height:22px;
@@ -53,7 +53,7 @@
     display:none;
 }
 
-.todo-item:hover .check-icon img{
+.todo-item.completed .check-icon img{
     display:inline-block;
     width:12px;
     margin-top:6px;
@@ -65,10 +65,9 @@
     height:55px;
     border:none; 
     border-radius:5px;   
-    font-size:0.8rem;
+    font-size:0.85rem;
     padding-left:60px;
-    
-    font-weight:700;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .todo-input.light{

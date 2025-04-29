@@ -1,4 +1,4 @@
-#root{
+:root{
   /*Primary*/
   --bright-blue:hsl(220, 98%, 61%);
   --check-background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
@@ -16,12 +16,23 @@
   --darktheme-dark-grayish-blue: hsl(234, 11%, 52%);
   --darktheme-very-dark-grayish-blue: hsl(233, 14%, 35%);
   --darktheme-very-dark-grayish-blue-hover: hsl(237, 14%, 26%);
+  background:transparent;
+  min-height:100vh;
 }
 
 body{
   font-size:18px;
   font-family: "Josefin Sans", sans-serif;
   min-width:375px;
+  
+}
+
+body.light{
+  background-color: #f9f9f9;
+}
+
+body.dark{
+  background-color: hsl(229, 27%, 12%);
 }
 
 *{
