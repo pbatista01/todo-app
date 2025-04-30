@@ -18,9 +18,11 @@ function TodoInput({addTodo}){
     };
 
     return(
+        <div className="todoInput-wrapper">
         <div className="todoInput-container">
             <input type="text" className={`todo-input ${darkTheme ? 'dark' : 'light'}`} placeholder="Create a new todo..." value={input} onChange={(e)=> setInput(e.target.value)} onKeyDown={handleKeyDown}/>
-            <span className="check-icon"><img src={iconCheck} /></span>
+            <span className="check-icon-input"><img src={iconCheck} /></span>
+        </div>
         </div>
     );
 }
