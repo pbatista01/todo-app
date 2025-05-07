@@ -1,11 +1,13 @@
 .todos{
     padding-bottom:70px;
+    display:flex;
+    flex-flow:column wrap;
 }
 
 .todo-list{
     width:100.5%;
     position:relative;
-    top:19px;
+    top:-4px;
     border-radius:5px;
     margin-left:30px;
     
@@ -21,10 +23,10 @@
 }
 
 .filter-list{
-    width:100%;
+    width:92.3%;
     height:55px;
     border-radius:5px;
-    margin-left:30px;
+    margin-left:31px;
     margin-top:35px;
     display:flex;
     gap:23px;
@@ -132,8 +134,53 @@
 
 .drag-text{
     text-align: center;
-    margin-left:57px;
+    margin-left:25px;
     margin-top:95px;
     font-size:0.98rem;
     color:var(--lighttheme-dark-grayish-blue);
+}
+
+@media(min-width:425px){
+    .filter-list{
+        width:93%;
+    }
+}
+
+@media(min-width:768px){
+    .todo-list{
+        width:58%;
+        top:5px;
+        margin-left:192px;
+    }
+
+    .filter-list{
+        width:58%;
+        margin-left:192px;
+    }
+}
+
+@media(min-width:1024px){
+    .todo-item{
+        font-size:1.2rem;
+        height:68px;
+        padding-left:75px;
+        line-height:68px;
+    }
+
+    .todo-item:last-child{
+        height:54px;
+        font-size:0.9rem;
+        line-height:54px;
+        padding-left:25px;
+        padding-right:30px;
+    }
+
+    .filter-list{
+        height:68px;
+    }
+
+    .todo-list{
+        width:39.2%;
+        margin-left:471px;
+    }
 }

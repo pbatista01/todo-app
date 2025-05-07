@@ -1,12 +1,11 @@
 .todoInput-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: -105px; /* Ajusta según diseño */
-    width: 100%;
+    margin-top: -105px;
   }
   
 .todoInput-container {
-    width: 85%;
+    flex-basis:85.5%;
 }
 
 .check-icon-input{
@@ -80,3 +79,53 @@
 .todo-input:focus{
     border:none;
 }
+
+@media(min-width:425px){
+    .todoInput-container {
+        flex-basis:86.5%;
+    }
+}
+
+@media(min-width:768px){
+    .todoInput-wrapper{
+        margin-top:-130px;
+    }
+
+    .todoInput-container{
+        flex-basis:50%;
+    }
+}
+
+@media(min-width:1024px){
+    .todo-input{
+        width:68%;
+        margin-left:111px;
+        height:68px;
+        font-size:1.2rem;
+        padding-left:75px;
+    }
+
+    .check-icon-input{
+        width:23px;
+        height:23px;
+        left:136px;
+        top:-46px;
+    }
+
+    .check-icon{
+        width:23px;
+        height:23px;
+        line-height:25px;
+        margin-top:6px;
+    }
+
+    .todo-item.completed .check-icon{
+        width:25px;
+        height:25px;
+    }
+
+    .todo-item.completed .check-icon img{
+        width:px;
+    }
+}
+

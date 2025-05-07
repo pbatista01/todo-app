@@ -1,11 +1,15 @@
 .header{
-    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width:100%;
+    width:100.5%;
     height:175px;
     padding:58px 30px 0;
+}
+
+.header-content{
+    display:flex;
+    justify-content: space-between;
 }
 
 .header.light{
@@ -16,22 +20,7 @@
     background-image:url('./assets/bg-mobile-dark.jpg');
 }
 
-.header div{
-    display:flex;
-    justify-content: space-between;
-}
 
-@media (min-width:768px) {
-    .header{
-        background-image: url('./assets/bg-desktop-light.jpg');
-        padding:60px;
-    }
-
-    .header div{
-        width:50%;
-        margin:0 auto;
-    }
-}
 
 .header-text{
     font-size:2rem;
@@ -44,3 +33,42 @@
     cursor:pointer;
 }
 
+@media (min-width:768px) {
+    .header{
+        height:200px
+    }
+
+    .header-content{
+        width:58%;
+        margin:0 auto;
+    }
+    
+    .header.light{
+        background-image: url('./assets/bg-desktop-light.jpg');
+    }
+
+    .header.dark{
+        background-image: url('./assets/bg-desktop-dark.jpg');
+    }
+   
+}
+
+@media(min-width:1024px){
+    .header{
+        height:245px;
+    }
+    
+    .header-content{
+        width:39%;
+        padding:0;
+    }
+
+    .header-text{
+        font-size:2.5rem;
+    }
+
+    .header-icon{
+        width:25px;
+        height:25px;
+    }
+}
