@@ -10,7 +10,8 @@ function TodoList({todos, clearCompleted, toggleTodo, removeTodo, filteredTodos,
 
 
     return(
-        <section className="todos">
+        <section className="todos-wrapper">
+        <div className="todos-container">
         <ul className={`todo-list ${darkTheme ? 'dark' : 'light'}`}>
             {filteredTodos.map(todo =>(
                 <li className={`todo-item ${darkTheme ? 'dark' : 'light'} ${todo.completed ? 'completed' : ''} `} key={todo.id} onClick={()=> toggleTodo(todo.id)}><span className="check-icon"><img src={iconCheck} /></span>{todo.text}<img src={deleteIcon} onClick={() => removeTodo(todo.id)} alt="delete icon" className="delete-icon"/></li>
@@ -25,6 +26,7 @@ function TodoList({todos, clearCompleted, toggleTodo, removeTodo, filteredTodos,
             </ul>
         </div>
         <p className="drag-text">Drag and drop to reorder list</p>
+        </div>
         </section>
     );
 }

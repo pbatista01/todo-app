@@ -1,69 +1,22 @@
 .todoInput-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: -105px;
+    margin-top: -92px;
   }
-  
-.todoInput-container {
-    flex-basis:85.5%;
-}
 
-.check-icon-input{
-    display:block;
-    width:20px;
-    height:20px;
-    border-radius:100%;
-    text-align: center;
-    line-height:21px;
-    color:white;
-    background-color:transparent;
-    border:1.5px solid var(--lighttheme-light-grayish-blue);
-    position:relative;
-    top:-40px;
-    left:24px;
-}
-
-.check-icon{
-    display:block;
-    width:20px;
-    height:20px;
-    border-radius:100%;
-    text-align: center;
-    line-height:21px;
-    color:white;
-    position:absolute;
-    top:16px;
-    left:24px;
-    background-color:transparent;
-    border:1.5px solid var(--lighttheme-light-grayish-blue);
-}
-
-.todo-item.completed .check-icon{
-    background:var(--check-background);
-    width:22px;
-    height:22px;
-    border:none;
-}
-
-.check-icon img{
-    display:none;
-}
-
-.todo-item.completed .check-icon img{
-    display:inline-block;
-    width:12px;
-    margin-top:6px;
-
+.todoInput-container{
+    flex-basis:87%;
 }
 
 .todo-input{
     width:100%;
-    height:55px;
+    height:48px;
     border:none; 
     border-radius:5px;   
-    font-size:0.85rem;
-    padding-left:60px;
+    font-size:0.73rem;
+    padding-left:52px;
     font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
 }
 
 .todo-input.light{
@@ -80,52 +33,99 @@
     border:none;
 }
 
-@media(min-width:425px){
-    .todoInput-container {
-        flex-basis:86.5%;
-    }
+
+.check-icon-input{
+    display:block;
+    width:18px;
+    height:18px;
+    border-radius:100%;
+    text-align: center;
+    line-height:21px;
+    color:white;
+    background-color:transparent;
+    border:1.5px solid var(--lighttheme-light-grayish-blue);
+    position:relative;
+    top:-35px;
+    left:20px;
 }
+
+.check-icon{
+    display:block;
+    width:18px;
+    height:18px;
+    border-radius:100%;
+    text-align: center;
+    line-height:21px;
+    color:white;
+    position:absolute;
+    top:16px;
+    left:20px;
+    background-color:transparent;
+    border:1.5px solid var(--lighttheme-light-grayish-blue);
+}
+
+.todo-item.completed .check-icon{
+    background:var(--check-background);
+    width:20px;
+    height:20px;
+    border:none;
+}
+
+.check-icon img{
+    display:none;
+}
+
+.todo-item.completed .check-icon img{
+    display:inline-block;
+    width:10px;
+    margin-top:6px;
+}
+
 
 @media(min-width:768px){
     .todoInput-wrapper{
-        margin-top:-130px;
+        margin-top:-110px;
     }
 
     .todoInput-container{
-        flex-basis:50%;
+        flex-basis:55%;
     }
 }
 
-@media(min-width:1024px){
+@media(min-width:1440px){
+    .todoInput-container{
+        flex-basis:37.6%;
+        margin-left:5px;
+        margin-top:-30px;
+    }
+
     .todo-input{
-        width:68%;
-        margin-left:111px;
-        height:68px;
-        font-size:1.2rem;
-        padding-left:75px;
+        height:65px;
+        font-size:1.1rem;
+        padding-left:72px;
     }
 
     .check-icon-input{
-        width:23px;
-        height:23px;
-        left:136px;
-        top:-46px;
+        width:22px;
+        height:22px;
+        top:-45px;
+        left:24px;
     }
 
     .check-icon{
-        width:23px;
-        height:23px;
-        line-height:25px;
-        margin-top:6px;
+        width:22px;
+        height:22px;
+        left:24px;
     }
 
     .todo-item.completed .check-icon{
-        width:25px;
-        height:25px;
+        width:24px;
+        height:24px;
     }
 
     .todo-item.completed .check-icon img{
-        width:px;
+        width:11px;
+        margin-top:8px;
     }
+    
 }
-
