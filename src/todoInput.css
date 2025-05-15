@@ -71,7 +71,7 @@
     border:none;
 }
 
-.check-icon img{
+.check-icon img, .check-icon-input img{
     display:none;
 }
 
